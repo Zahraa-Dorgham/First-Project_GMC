@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+/* SECTION */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* image aventure */
+  background: url("https://media.istockphoto.com/id/700447880/fr/photo/vue-depuis-la-colline-de-byrsa-avec-les-ruines-de-carthage-et-du-paysage.jpg?s=612x612&w=0&k=20&c=YV3YGzLiRZJCz35PD3pWqcYtEZUAyNVR1-k7bs7Jj78=") center/cover no-repeat;
+}
+
+/* VOILE BLANC */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.85); /* blanc */
+  top: 0;
+  left: 0;
+}
+
+/* TEXTE TRANSPARENT */
+.title {
+  position: absolute;
+  top: 10%;
+  font-size: 250px;
+  line-height:220px;
+  margin: -50px 50px 0px 50px;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
+  background: url("https://media.istockphoto.com/id/700447880/fr/photo/vue-depuis-la-colline-de-byrsa-avec-les-ruines-de-carthage-et-du-paysage.jpg?s=612x612&w=0&k=20&c=YV3YGzLiRZJCz35PD3pWqcYtEZUAyNVR1-k7bs7Jj78=") center/cover;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* PERSONNAGE */
+.person {
+  width: 300px;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+.sous-titre {
+    font-size: 40px;
+    color: #d28b5c;
+    margin-top: 420px;
+    z-index: 2;
+}
+
+
+
+.fleche {
+    
+    font-size: 30px;
+    color: #d28b5c;
+    z-index: 2;
+}
