@@ -4,6 +4,51 @@ body {
   margin: 0;
 }
 
+/* nav */
+
+#icontravel {
+  width: 130px;
+  height: 90px;
+  margin: 0px 20px 0px 40px;
+}
+
+.navbar-expand-lg {
+  height: 60px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0px -27px 0px 53px;
+}
+
+.btn-outline-success {
+  background-color: #C97A2B;
+  color: #FAD7A0;
+  border-color: #C97A2B;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #E6A85C;
+  color: black;
+  border-color: #E6A85C;
+  transform: scale(1.1);
+}
+
+.navbar-expand-lg{
+  background: linear-gradient(
+  180deg,
+  #FCE5C0 0%,
+  #FAD7A0 50%,
+  #F5C27A 100%
+);
+}
+
+
 /* SECTION */
 .hero {
   height: 100vh;
@@ -30,7 +75,7 @@ body {
 /* TEXTE TRANSPARENT */
 .title {
   position: absolute;
-  top: 10%;
+  top: 5%;
   font-size: 250px;
   line-height:220px;
   margin: -50px 50px 0px 50px;
@@ -50,18 +95,18 @@ body {
 .person {
   width: 500px;
   z-index: 3;
-  margin: -30px -852px 0px 85px;
+  margin: -100px -700px 0px -2px;
 }
 
 
 .sous-titre {
-    font-size: 120px;
+    font-size: 100px;
     letter-spacing: -7px;
     color: #dc6923;
     margin-top: 420px;
     z-index: 4;
     font-family: "Splash", cursive;
-    margin: 0px -283px -280px 80px;
+    margin: -120px -283px -280px -8px;
     padding: 0px 243px 0px 150px;
     /* text-align: center;
     display: flex;
@@ -72,9 +117,21 @@ body {
 
 
 .fleche {
-    width: 50px;
-    height: 20px;
+    width: 10px;
+    height: 80px;
     z-index: 4;
     position: relative;
-    margin: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    margin:-130px 0px 0px 657px;
+    animation: upDown 2s ease-in-out infinite; /* plus lent */
 }
+
+/* Animation */
+@keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); } /* petit mouvement */
+  100% { transform: translateY(0); }
+}
+
+
