@@ -537,3 +537,46 @@ body {
 .parcard p {
   font-size: 1.1rem;
 }
+
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: #FAD7A0;
+    height: 68vh;
+    text-transform: capitalize;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    
+}
+.service a{
+    color: black;
+    text-decoration: none;
+}
+
+#img{
+    width: 20px;
+    background-color: #c56606;
+    border-radius: 25px;
+}
+.gallery img{
+    width: 100px;
+    height: 120px;
+}
+#gallery{
+    margin-top: 5px;
+}
