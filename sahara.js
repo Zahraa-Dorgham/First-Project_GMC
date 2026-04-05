@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     // navbar
     var navbar = document.getElementById("mainNav");
     var hero = document.querySelector(".hero-section");
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", handleNavbar);
     handleNavbar();
 
-    // scroll
+    // scroll vers la section galerie
     function scrollToSection(btnId, sectionId) {
         var btn = document.getElementById(btnId);
         var section = document.getElementById(sectionId);
@@ -32,7 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var cart = [];
 
-
+    var defaultImages = {
+        "Tozeur": "https://i.pinimg.com/1200x/66/8e/c8/668ec8ed69051e8245a5df7fd7cf0c2b.jpg",
+        "Matmata": "https://i.pinimg.com/1200x/fb/f5/cd/fbf5cdb8ba0b14f99ebcd7279d17257a.jpg",
+        "Tataouine": "https://i.pinimg.com/1200x/47/2d/8e/472d8e5fd4cee4ac39a2b7143ae60821.jpg",
+        "Douz": "https://i.pinimg.com/1200x/e7/a2/d9/e7a2d90890f0ea1257c86ac4e4efdc8f.jpg"
+    };
 
     function generateId() {
         return Date.now() + Math.random().toString(36).substr(2, 5);
