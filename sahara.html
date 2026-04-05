@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Sahara Tunisia | Réservez votre aventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="sahara.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./icon2.png" id="icontravel" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destination</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="cartNavLink">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Where the Sahara Tells Its Legends</h1>
+            <button class="btn-view" id="scrollToGalleryBtn">Discover Wonders <span>&#8599;</span></button>
+            <div class="scroll-down" id="scrollDownArrow">
+                <p>SCROLL DOWN</p>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-collection" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Amazing Tours</span> And Fun Adventures <br> Waiting For You</h2>
+                <p>Immerse yourself in the soul of southern Tunisia...</p>
+            </div>
+            <div class="image-mosaic">
+                <div class="mosaic-card"><img
+                        src="https://i.pinimg.com/736x/8e/ab/77/8eab77b8304b29a554dc9fd75e5d36dc.jpg" alt="Tozeur">
+                    <div class="mosaic-overlay">
+                        <h3>Tozeur</h3>
+                        <p>Green oasis</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="https://i.pinimg.com/1200x/f4/d3/5d/f4d35d447afdd5c37b0f7afb91b253d3.jpg" alt="Matmata">
+                    <div class="mosaic-overlay">
+                        <h3>Matmata</h3>
+                        <p>Troglodyte homes</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="https://i.pinimg.com/736x/18/0c/6a/180c6ae9d84ff9d327905716a999a654.jpg" alt="Tataouine">
+                    <div class="mosaic-overlay">
+                        <h3>Tataouine</h3>
+                        <p>Star Wars location</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="https://i.pinimg.com/736x/ee/03/26/ee0326f8981662b5bc19a69a6febab06.jpg" alt="Douz">
+                    <div class="mosaic-overlay">
+                        <h3>Douz</h3>
+                        <p>Gateway to desert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations-showcase" id="destinations">
+        <div class="container">
+            <div class="section-title-deco">
+                <div class="badge">Authentic travel</div>
+                <h3>Explore every jewel of the Tunisian Sahara</h3>
+                <p class="text-muted mt-2">Book your favorites, manage your cart</p>
+            </div>
+
+            <div class="destinations-grid">
+                <!-- TOZEUR -->
+                <div class="destination-card-detailed" data-dest="Tozeur">
+                    <div class="dest-img"
+                        style="background-image: url('https://i.pinimg.com/1200x/66/8e/c8/668ec8ed69051e8245a5df7fd7cf0c2b.jpg');">
+                    </div>
+                    <div class="dest-content">
+                        <span class="dest-location"> Tozeur • The garden of the desert</span>
+                        <h3>Tozeur, the paradisiacal oasis</h3>
+                        <p class="dest-description">Tozeur is a magical gateway to the desert...</p>
+                        <div><strong>✨ Available activities :</strong>
+                            <ul class="activities-list">
+                                <li>Hiking in the palm grove <button class="add-activity-btn"
+                                        data-activity="Hiking in Tozeur palm grove" data-price="25">+ Add</button></li>
+                                <li>Visit Eden Palm Museum <button class="add-activity-btn"
+                                        data-activity="Eden Palm Museum visit" data-price="15">+ Add</button></li>
+                                <li>Horse-drawn carriage ride & date tasting <button class="add-activity-btn"
+                                        data-activity="Carriage ride & date tasting" data-price="30">+ Add</button></li>
+                                <li>Excursion to Chebika waterfalls <button class="add-activity-btn"
+                                        data-activity="Chebika waterfalls excursion" data-price="40">+ Add</button></li>
+                            </ul>
+                        </div>
+                        <button class="btn-explore book-destination" data-dest-name="Tozeur" data-price="120">📌 Book
+                            this destination →</button>
+                    </div>
+                </div>
+
+                <!-- MATMATA -->
+                <div class="destination-card-detailed reverse" data-dest="Matmata">
+                    <div class="dest-img"
+                        style="background-image: url('https://i.pinimg.com/1200x/fb/f5/cd/fbf5cdb8ba0b14f99ebcd7279d17257a.jpg');">
+                    </div>
+                    <div class="dest-content">
+                        <span class="dest-location"> Matmata • The troglodyte city</span>
+                        <h3>Matmata, dwellings beneath the earth</h3>
+                        <p class="dest-description">Unique in the world, Matmata is home to dwellings dug into the
+                            limestone rock...</p>
+                        <div><strong>✨ Available activities :</strong>
+                            <ul class="activities-list">
+                                <li>Visit troglodyte houses <button class="add-activity-btn"
+                                        data-activity="Troglodyte houses visit" data-price="20">+ Add</button></li>
+                                <li>Dinner with a local family <button class="add-activity-btn"
+                                        data-activity="Dinner with local family" data-price="35">+ Add</button></li>
+                                <li>Stargazing <button class="add-activity-btn" data-activity="Stargazing in Matmata"
+                                        data-price="18">+ Add</button></li>
+                                <li>Trekking in the Toujane gorges <button class="add-activity-btn"
+                                        data-activity="Trekking Toujane gorges" data-price="28">+ Add</button></li>
+                            </ul>
+                        </div>
+                        <button class="btn-explore book-destination" data-dest-name="Matmata" data-price="110">📌 Book
+                            this destination →</button>
+                    </div>
+                </div>
+
+                <!-- TATAOUINE -->
+                <div class="destination-card-detailed" data-dest="Tataouine">
+                    <div class="dest-img"
+                        style="background-image: url('https://i.pinimg.com/1200x/47/2d/8e/472d8e5fd4cee4ac39a2b7143ae60821.jpg');">
+                    </div>
+                    <div class="dest-content">
+                        <span class="dest-location"> Tataouine • Legendary ksars</span>
+                        <h3>Tataouine, fortress of the south</h3>
+                        <p class="dest-description">A symbol of Berber architecture...</p>
+                        <div><strong>✨ Available activities :</strong>
+                            <ul class="activities-list">
+                                <li>Visit Ksar Hadada & Ouled Soltane <button class="add-activity-btn"
+                                        data-activity="Visit Ksar Hadada & Ouled Soltane" data-price="22">+ Add</button>
+                                </li>
+                                <li>Trekking in the rocky desert <button class="add-activity-btn"
+                                        data-activity="Rocky desert trekking" data-price="32">+ Add</button></li>
+                                <li>Nomadic stay & pottery workshop <button class="add-activity-btn"
+                                        data-activity="Nomadic stay + pottery" data-price="45">+ Add</button></li>
+                                <li>4x4 excursion in the Ksour mountains <button class="add-activity-btn"
+                                        data-activity="4x4 Ksour mountains" data-price="38">+ Add</button></li>
+                            </ul>
+                        </div>
+                        <button class="btn-explore book-destination" data-dest-name="Tataouine" data-price="100">📌 Book
+                            this destination →</button>
+                    </div>
+                </div>
+
+                <!-- DOUZ -->
+                <div class="destination-card-detailed reverse" data-dest="Douz">
+                    <div class="dest-img"
+                        style="background-image: url('https://i.pinimg.com/1200x/e7/a2/d9/e7a2d90890f0ea1257c86ac4e4efdc8f.jpg');">
+                    </div>
+                    <div class="dest-content">
+                        <span class="dest-location"> Douz • The great eastern erg</span>
+                        <h3>Douz, capital of the Sahara</h3>
+                        <p class="dest-description">Known as the "gateway to the desert"...</p>
+                        <div><strong>✨ Available activities :</strong>
+                            <ul class="activities-list">
+                                <li>Camel ride <button class="add-activity-btn" data-activity="Camel ride in Douz"
+                                        data-price="27">+ Add</button></li>
+                                <li>Night in a Berber tent <button class="add-activity-btn"
+                                        data-activity="Berber tent night" data-price="55">+ Add</button></li>
+                                <li>Sandboarding on the dunes <button class="add-activity-btn"
+                                        data-activity="Sandboarding" data-price="20">+ Add</button></li>
+                                <li>International Sahara Festival <button class="add-activity-btn"
+                                        data-activity="Sahara Festival" data-price="60">+ Add</button></li>
+                            </ul>
+                        </div>
+                        <button class="btn-explore book-destination" data-dest-name="Douz" data-price="130">📌 Book this
+                            destination →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pannier -->
+    <div class="cart-floater" id="openCart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>My Cart</h3>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items-container" id="cartItemsContainer">
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="totalPrice">0</span> €</div>
+            <button class="btn-checkout" id="checkoutBtn">Confirm booking</button>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sahara.js"></script>
+</body>
+
+</html>
