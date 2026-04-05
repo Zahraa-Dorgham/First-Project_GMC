@@ -9,10 +9,14 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    gap: 0 !important;
+        
+        padding: 0 !important;
+        margin: 0 !important;
 }
 
 .card {
-    background-size: cover;
+    
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
@@ -25,6 +29,10 @@
     justify-content: center;
     text-align: center;
     color: white;
+    border-radius: 0px;
+    margin: 0 !important;
+    padding: 0 !important;
+    
 }
 
 .card::before {
