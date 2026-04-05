@@ -665,6 +665,7 @@ footer{
     background-color: #FAD7A0;
     height: 68vh;
     text-transform: capitalize;
+    margin-top: 100px;
 }
 .logo{
     display: flex;
