@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -105,7 +108,7 @@ body {
     height: 100vh;
     min-height: 700px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%),
-        url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=2076&auto=format&fit=crop');
+    url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=2076&auto=format&fit=crop');
     background-size: cover;
     background-position: center 30%;
     background-attachment: scroll;
@@ -130,26 +133,67 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.btn-view {
-    background: #d98c2b;
-    border: none;
-    padding: 14px 38px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    border-radius: 50px;
+.btn-view{
+    /* border: none; */
+    overflow: hidden;
+    background-color: rgb(2 107 190) ;
     color: white;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    font-weight: 700;
+    /* text-transform:uppercase; */
+    /* cursor: pointer; */
+    transition: backround 0.3s;
+    transition: all 0.3s ease;
+    /* gap: 10px; */
+
+}
+.btn-view:hover{
+    color: rgb(205, 203, 203);
+    transform: translateX(10px);
+ }
+.btn-view::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 20%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transition: left 1.3s ease;
+  z-index: 1;
+  border-radius: 25px
+}
+.btn-view:hover::before{
+    left: 100%;
+    width: 30%;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.6),transparent);
+}
+.btn-view .arrow{
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+    /* display: inline-block; */
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform:rotate(-90deg);
+}
+.btn-view:hover .arrow{
+    transform: rotate(0deg); 
+    margin-bottom: 50px !important; 
+    margin-left: 5px; 
+    transform:translateX(-110%) rotate(-45deg);
+    transition: transform 0.4s ease, margin 0.4s ease;
+    left: 50%;
+}
+h2 span{
+    font-size: 3.5rem;
 }
 
-.btn-view:hover {
-    background: #b96f1f;
-    transform: translateY(-3px);
-    gap: 14px;
-}
 
 .scroll-down {
     position: absolute;
@@ -203,6 +247,7 @@ body {
     font-size: 2.8rem;
     font-weight: 800;
     color: #2d2a24;
+    font-family: "Dancing Script", cursive;
 }
 
 .section-header h2 span {
@@ -294,7 +339,9 @@ body {
     font-weight: 700;
     color: #27241f;
 }
-
+h3{
+    font-family: "Dancing Script", cursive;
+}
 .destinations-grid {
     display: flex;
     flex-direction: column;

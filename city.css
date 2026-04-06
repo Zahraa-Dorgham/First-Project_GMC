@@ -9,7 +9,15 @@
   height: 90px;
   margin: 0px 20px 0px 40px;
 }
-
+h2 {
+    font-family: "Dancing Script", cursive;
+}
+h3{
+    font-family: "Dancing Script", cursive;
+}
+.tunis h1{
+    font-family: "Dancing Script", cursive;
+}
 .navbar-expand-lg {
   height: 60px;
 }
@@ -143,6 +151,10 @@
 .hero-1 h1{
     font-weight: 750;
     font-size: 70px;
+}
+h2 span{
+    font-size: 3.5rem;
+    /* font-weight: 700; */
 }
 .hero-1 button{
     overflow: hidden;
