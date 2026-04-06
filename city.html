@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sea</title>
-    <link rel="stylesheet" href="fatma.css">
+    <title>City Tunisia | Réservez votre aventure</title>
+    <link rel="stylesheet" href="city.css">
+    <link rel="stylesheet" href="sahara.css">
     <link rel="icon" href="./images/icon2.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
@@ -19,10 +20,22 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Destination</a>
+          <a class="nav-link" href="cards.html">Destination</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Packages</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#identification1">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#destination2">Contact Us</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -32,9 +45,26 @@
     </div>
   </div>
 </nav>
-<div class="cart-float">
-  <i class="fa fa-shopping-cart"></i>
-</div>
+  <!-- pannier -->
+    <div class="cart-floater" id="openCart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>My Cart</h3>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items-container" id="cartItemsContainer">
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="totalPrice">0</span> €</div>
+            <button class="btn-checkout" id="checkoutBtn">Confirm booking</button>
+        </div>
+    </div>
+
 
 
 <div class="hero-1" id="section">
@@ -45,55 +75,70 @@
     <a href="#next" class="arrow-up"></a>
 
 </div>
-<div id="next">
-    
- </div>
-                <div class="mosaic-card"><img
-                        src="https://i.pinimg.com/1200x/f4/d3/5d/f4d35d447afdd5c37b0f7afb91b253d3.jpg" alt="Matmata">
-                    <div class="mosaic-overlay">
-                        <h3>Matmata</h3>
-                        <p>Troglodyte homes</p>
-                    </div>
-                </div>
-                 </div>
-                <div class="mosaic-card"><img
-                        src="https://i.pinimg.com/1200x/f4/d3/5d/f4d35d447afdd5c37b0f7afb91b253d3.jpg" alt="Matmata">
-                    <div class="mosaic-overlay">
-                        <h3>Matmata</h3>
-                       <p>Troglodyte homes</p>
-                    </div>
-                </div>
-                 </div>
-                <div class="mosaic-card"><img
-                        src="https://i.pinimg.com/1200x/f4/d3/5d/f4d35d447afdd5c37b0f7afb91b253d3.jpg" alt="Matmata">
-                    <div class="mosaic-overlay">
-                        <h3>Matmata</h3>
-                        <p>Troglodyte homes</p>
-                    </div>
-                </div>
-                 </div>
-                <div class="mosaic-card"><img
-                        src="https://i.pinimg.com/1200x/f4/d3/5d/f4d35d447afdd5c37b0f7afb91b253d3.jpg" alt="Matmata">
-                    <div class="mosaic-overlay">
-                        <h3>Matmata</h3>
-                        <p>Troglodyte homes</p>
-                    </div>
-                </div>
-                 </div>
-                <div class="mosaic-card"><img
-                        src="https://i.pinimg.com/1200x/f4/d3/5d/f4d35d447afdd5c37b0f7afb91b253d3.jpg" alt="Matmata">
-                    <div class="mosaic-overlay">
-                        <h3>Matmata</h3>
-                        <p>Troglodyte homes</p>
-                    </div>
-                </div>
-                
+    <section class="gallery-collection" id="gallery">
+        <div class="container" id="next">
+            <div class="section-header">
+                <h2><span>Tunisia</span> Like You Never <br> Seen Befor</h2>
+                <p>Where culture, adventure, and unforgettable moments meet...</p>
+            </div>
 
+            <div class="carousel">
+            <button class="prev">❮</button>
+            <div class="carousel-track">
+                <div class="mosaic-card"><img src="images/43.jpeg" alt="Tozeur">
+                    <div class="mosaic-overlay">
+                        <h3>Tunisia</h3>
+                        <p>Mosquée Zitouna</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="https://i.pinimg.com/1200x/8d/31/d3/8d31d3d99cfb71b61dda5bd7db7a411f.jpg" alt="Tozeur">
+                    <div class="mosaic-overlay">
+                        <h3>Sfax</h3>
+                        <p>Old medina souks</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="images/historic port.jpeg" alt="Matmata">
+                    <div class="mosaic-overlay">
+                        <h3>Mahdia</h3>
+                        <p>Historic port</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="https://i.pinimg.com/736x/7b/b7/d1/7bb7d1fdb05c77363d7af76d01a272a5.jpg" alt="Tataouine">
+                    <div class="mosaic-overlay">
+                        <h3>Monastir</h3>
+                        <p>Ribat of Monastir</p>
+                    </div>
+                </div>
+                <div class="mosaic-card"><img
+                        src="images/jasmine.jpeg" alt="Douz">
+                    <div class="mosaic-overlay">
+                        <h3>Nabel</h3>
+                        <p>The annual jasmine festival</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="next">❯</button>
+
+        </div>
+        </div>
+    </section>
+
+
+<img src="images/destination.png" id="destination" alt="">
+<img src="images/bag.png" class="bag">
+<div class="tunis" id="tunis">
+    <div class="image-container">
+    <img src="images/tunis2.jpg" alt="" id="img-tun">
+    <div class="stamp" id="left">
+    <img src="images/reserved.png"  >
 </div>
 
-
-<div class="tunis">
-    <img src="images/tunis2.jpg" alt="">
+    </div>
     <div class="">
     <h1>Tunis</h1>
     <p>Tunis is the vibrant capital and largest city of Tunisia,
@@ -105,6 +150,9 @@
     <button>read more<span class="arrow"></span></button> 
 </div>
 </div>
+<img src="images/destination.-R.png" class="destination" alt="">
+<img src="images/nswe.png" class="west" alt="">
+<!-- SFAX -->
 <div class="tunis">
     <div class="">
     <h1>Sfax</h1>
@@ -114,10 +162,25 @@
     Sfax offers visitors a unique and genuine cultural experience....</p>
     <button>read more<span class="arrow"></span></button> 
 </div>
-<img src="images/sfax.jpg" alt="">
+<div class="image-container">
+<img src="images/sfax.jpg" alt="" id="img-tun">
+<div class="stamp">
+    <img src="images/reserved.png"  >
+
 </div>
+</div>
+
+</div>
+<img src="images/destination.-l.png" class="destination" alt="">
+<img src="images/camera.png"  class="camera">
+<!-- MAHDIA -->
 <div class="tunis">
-    <img src="images/Mahdia1.jpg" alt="">
+    <div class="image-container">
+    <img src="images/Mahdia1.jpg" alt="" id="img-tun">
+    <div class="stamp" id="left">
+    <img src="images/reserved.png"  >
+</div>
+</div>
     <div class="">    
     <h1>Mahdia</h1>
     <p>Nabeul is a vibrant coastal city known for its handicrafts, colorful markets,
@@ -127,7 +190,9 @@
 </div>
 
 </div>
-
+<img src="images/destination.-R.png" class="destination" alt="">
+<img src="images/des.png"  class="des">
+<!-- MONASTIR -->
 <div class="tunis">
     <div class="">
     <h1>Monastir</h1>
@@ -135,11 +200,24 @@
     and scenic seaside views. With landmarks like the Ribat and its relaxing
     atmosphere, it is a popular destination for both culture and leisure....</p>
     <button>read more<span class="arrow"></span></button> 
-</div>    
-<img src="images/Monastir2.jpg" alt="">
 </div>
+<div class="image-container">
+<img src="images/Monastir2.jpg" alt="" id="img-tun">
+<div class="stamp">
+    <img src="images/reserved.png"  >
+
+</div>
+</div>    
+</div>
+<img src="images/destination.-l.png" class="destination" alt="">
+<!-- NABEL -->
 <div class="tunis">
-    <img src="images/nabel.jpg" alt="">
+    <div class="image-container">
+    <img src="images/nabel.jpg" alt="" id="img-tun">
+    <div class="stamp" id="left">
+    <img src="images/reserved.png"  >
+</div>
+</div>
     <div class="">
     <h1>Nabeul</h1>
     <p>Nabeul is a vibrant coastal city known for its handicrafts, colorful markets,
@@ -150,6 +228,7 @@
     
 
 </div>
+<img src="images/poster.jpeg" class="corn" alt="">
 
 
 <footer>
@@ -190,6 +269,12 @@
     <p class="text-center" id="p">© 2026 road travel adventure. All rights reserved.</p>
 
 </footer>
+
+
+
+<script src="city.js"></script>
+<script src="sahara.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

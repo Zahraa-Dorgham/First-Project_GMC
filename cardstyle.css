@@ -4,19 +4,90 @@
     padding: 0;
 }
 
+/* NAVBAR شفافة */
+.custom-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: transparent;
+    padding: 15px 20px;
+}
+
+/* MENU ICON */
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* FULLSCREEN MENU */
+.menu-fullscreen {
+
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100vh;
+    background: rgba(240, 203, 143, 0.034);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    z-index: 2000;
+}
+.menu-fullscreen.active {
+    left: 0;
+}
+.menu-fullscreen ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-fullscreen ul li {
+    margin: 20px 0;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+}
+
+.menu-fullscreen ul li a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-fullscreen ul li a:hover {
+    color: #d98c2b;
+    transform: scale(1.2);
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#zahra{
+    margin-top: 200px;
+}
 .hero-container {
     display: flex;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    gap: 0 !important;
-        
-        padding: 0 !important;
-        margin: 0 !important;
+    /* overflow: hidden; */
+    /* gap: 0 !important; */
+    /* padding: 0px !important;
+    margin: 0px !important; */
+    
 }
 
 .card {
-    
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;

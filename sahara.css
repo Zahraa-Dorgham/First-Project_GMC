@@ -433,7 +433,7 @@ body {
 /* Bouton flottant du panier */
 .cart-floater {
     position: fixed;
-    right: 20px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     background-color: #fce4b3;
@@ -662,7 +662,7 @@ body {
 
 /* FOOTER */
 footer{
-    background-color: #FAD7A0;
+    background-color: #fffad4;
     height: 68vh;
     text-transform: capitalize;
     margin-top: 100px;
